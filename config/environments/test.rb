@@ -27,7 +27,7 @@ Newapp::Application.configure do
   # Tell Action Mailer not to deliver emails to the real world.
   # The :test delivery method accumulates sent emails in the
   # ActionMailer::Base.deliveries array.
-  config.action_mailer.delivery_method = :test
+  config.action_mailer.delivery_method = :smtp #THIS USED TO BE :test!!!!!!!!
 
   # Raise exception on mass assignment protection for Active Record models
   config.active_record.mass_assignment_sanitizer = :strict
@@ -36,6 +36,14 @@ Newapp::Application.configure do
   config.active_support.deprecation = :stderr
   
   # ActionMailer Config
-  config.action_mailer.default_url_options = { :host => 'example.com' }
+  config.action_mailer.default_url_options = { :host => 'getwellbe.com' }
 
+config.action_mailer.smtp_settings = {
+  :address              => "smtp.gmail.com",
+  :port                 => 587,
+  :domain               => 'baci.lindsaar.net',
+  :user_name            => 'getwellbe',
+  :password             => 'Wellbeemail@12',
+  :authentication       => 'plain',
+  :enable_starttls_auto => true  }
 end

@@ -1,11 +1,39 @@
-<p id="notice"><%= notice %></p>
+<h2 id="notice"><%= notice %></h2>
+<h3>Just a few more things before you go...</h3>
 
-<p>
-  <b>Email:</b>
-  <%= @user.email %>
-</p>
+<div class ="container-fluid">
+<div class="row-fluid">
+	<div class="span8">
+<form class="form-horizontal">
+  <div class="field">
+    <%= label_tag :card_number, "Credit Card Number" %>
+    <%= text_field_tag :card_number, nil, name: nil %>
+  </div>
+  <div class="field">
+    <%= label_tag :card_code, "Security Code on Card (CVV)" %>
+    <%= text_field_tag :card_code, nil, name: nil %>
+  </div>
+  <div class="field">
+    <%= label_tag :card_month, "Card Expiration" %>
+    <%= select_month nil, {add_month_numbers: true}, {name: nil, id: "card_month"} %>
+    <%= select_year nil, {start_year: Date.today.year, end_year: Date.today.year+15}, {name: nil, id: "card_year"} %>
+  </div>
+    <button type="submit" class="submit-button" style="padding: 7px;">Submit Payment</button>
+</form>
+<div id="stripe_error">
+  <noscript>JavaScript is not enabled and is required for this form. First enable it in your web browser settings.</noscript>
+</div>
+</div>
+	<div class="span4">
+		<p> ...and this is the second space </p>
+	</div>
+		</div>
 
-<p>
-  <b>Condition:</b>
-  <%= @user.condition %>
-</p>
+</div>
+
+
+
+
+
+
+<p>Or just <%= link_to 'click here', :controller => "home", :action => "index" %> to go back (why would you want to?) </p>
