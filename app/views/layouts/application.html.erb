@@ -5,10 +5,9 @@
     <title><%= content_for?(:title) ? yield(:title) : "Wellbe" %></title>
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Wellbe" %>">
     <%= stylesheet_link_tag "application", :media => "all" %>
-    <%= javascript_include_tag "https://js.stripe.com/v1/", "application" %>
+    <%= javascript_include_tag "application", :media => "all" %>
     <!-- TOOK OUT THE TAG THING HERE -->
     <%= csrf_meta_tags %>
-
     <%= yield(:head) %>
   </head>
         <div class="navbar navbar-inverse navbar-fixed-top">
@@ -22,13 +21,13 @@
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">Our Sources<b class="caret"></b></a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-header">Integrative Medicine</li>
-                                    <li><a href="http://www.nccam.nih.gov">NIH</a></li>
-                                    <li><a href="http://www.naturalmedicine.com">NaturalMedicine.com</a></li>
-                                    <li><a href="http://www.sciencebasedmedicine.org">ScienceBasedMedicine.org</a></li>
-                                    <li><a href="http://www.imjournal.com">IMJournal.com</a></li>
+                                    <li><a href="http://www.nccam.nih.gov" target="_blank">NIH</a></li>
+                                    <li><a href="http://www.naturalmedicine.com" target="_blank">NaturalMedicine.com</a></li>
+                                    <li><a href="http://www.sciencebasedmedicine.org" target="_blank">ScienceBasedMedicine.org</a></li>
+                                    <li><a href="http://www.imjournal.com" target="_blank">IMJournal.com</a></li>
                                     <li class="nav-header">Nutrition and Well-Being</li>
-                                    <li><a href="http://www.yrec.org">Yoga</a></li>
-                                    <li><a href="http://www.naturopathic.org">Naturopathy</a></li>
+                                    <li><a href="http://www.yrec.org" target="_blank">Yoga</a></li>
+                                    <li><a href="http://www.naturopathic.org" target="_blank">Naturopathy</a></li>
                                     <li class="nav-header" style="size: 20px">...and many more!</li>
                                 </ul>
                             </li>

@@ -1,10 +1,10 @@
 <%= simple_form_for User.new do |f| %>
   <%= f.error_notification %>
-  <div class="span 4">
+  <div class="span4">
     <%= f.input :email, placeholder: "user@domain.com"%>
 </div>
 <div class="span4">   
- 	<%= f.input :condition, label: "Research Area", placeholder: "Tell us what to research" %>
+ 	<%= f.input :condition, label: "Research Area", placeholder: "Tell us what to research", hint: 'EG: Back Pain or Acupuncture' %>
  </div>
  <div class="span4">
 	<%= f.button :submit, 'Begin curation'%>
