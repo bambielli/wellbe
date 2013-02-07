@@ -39,12 +39,19 @@ wellbe.png: wellbe-1915a7a762f500646d4b97231cb90eee.png
 wellbe/index.png: wellbe-1915a7a762f500646d4b97231cb90eee.png
 wellbe_logo.png: wellbe_logo-2403b0cd303d79aa439db01026669b7f.png
 wellbe_logo/index.png: wellbe_logo-2403b0cd303d79aa439db01026669b7f.png
+<<<<<<< HEAD
 wellbe_logo2.png: wellbe_logo2-83aa20a266346945b7c0f3787c4ea431.png
 wellbe_logo2/index.png: wellbe_logo2-83aa20a266346945b7c0f3787c4ea431.png
 application.js: application-c9be1fc02f4e7ad2dece5afc0fe34ed7.js
 application/index.js: application-c9be1fc02f4e7ad2dece5afc0fe34ed7.js
 application.css: application-0c209db7b2acd0f1ae9c436a65e36690.css
 application/index.css: application-0c209db7b2acd0f1ae9c436a65e36690.css
+=======
+application.js: application-22ac90b1a6f6a692bde59eebf51dc074.js
+application/index.js: application-22ac90b1a6f6a692bde59eebf51dc074.js
+application.css: application-c244d333a55dbaa99f72a508f6229b4d.css
+application/index.css: application-c244d333a55dbaa99f72a508f6229b4d.css
+>>>>>>> 9db74f6c577a20b4fc64c824cc1aedef3c4889fe
 fontawesome-webfont.eot: fontawesome-webfont-d1a87f253d164f9455111cf8108b946d.eot
 fontawesome-webfont/index.eot: fontawesome-webfont-d1a87f253d164f9455111cf8108b946d.eot
 fontawesome-webfont.svg: fontawesome-webfont-c3f3594758768fbb43eae746d18b3b50.svg
