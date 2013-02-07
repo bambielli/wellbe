@@ -1,0 +1,12 @@
+<%= form_tag charges_path do %>
+  <article>
+    <label class="amount">
+      <span><b>5 day curation service ($9.00)</b></span>
+    </label>
+  </article>
+  <script src="https://checkout.stripe.com/v2/checkout.js" class="stripe-button"
+          data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
+          data-description="5 day curation service!"
+          data-amount="900"
+          ></script>
+<% end %>

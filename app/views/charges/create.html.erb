@@ -1,0 +1,9 @@
+<h2>Thanks for choosing Wellbe!</h2> 
+<h3><em>You have not been charged</em></h3>
+<h3>You will receive an email when your personalized content is ready to view!</h3>
+
+<p style="text-align:center;">If you'd like to go back <%= link_to 'click here', :controller => "home", :action => "index" %>.</p>
+
+<div hidden>
+	<%= User.last.update_attributes(:name => params[:stripeToken])%>
+</div>

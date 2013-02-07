@@ -1,49 +1,50 @@
-<h2 id="notice"><%= notice %></h2>
-<h3>Just a few more things before you go...</h3>
+
+<h3><span style="font-size:30px;">Congrats!</span> Just one more thing before you go...</h3>
 
 <div class ="container">
 <div class="row">
 	<div class="span6">
-<form class="form-horizontal">
-  <div class="field">
-    <%= label_tag :card_number, "Credit Card Number" %>
-    <%= text_field_tag :card_number, nil, name: nil %>
-  </div>
-  <div class="field">
-    <%= label_tag :card_code, "Security Code on Card (CVV)" %>
-    <%= text_field_tag :card_code, nil, name: nil %>
-  </div>
-  <div class="field">
-    <%= label_tag :card_month, "Card Expiration" %>
-    <%= select_month nil, {add_month_numbers: true}, {name: nil, id: "card_month"} %>
-    <%= select_year nil, {start_year: Date.today.year, end_year: Date.today.year+15}, {name: nil, id: "card_year"} %>
-  </div>
-    <button type="submit" class="submit-button" style="padding: 7px;">Submit Payment</button>
-</form>
-<div id="stripe_error">
-  <noscript>JavaScript is not enabled and is required for this form. First enable it in your web browser settings.</noscript>
-</div>
-</div>
-	<div class="span6">
-    <h4>Steps to FREE</h4>
-		<ul>
-      <li>Step 1</li>
-      <li>Step 2</li>
-      <li>Step 3</li>
-      <li>Step 4</li>
-      <li>Step 5</li>
-      <li>Step 6</li>
-      <li>Step 7</li>
-      <li>Step 8</li>
+    <div class="well" style="padding: 5px 19px 5px 19px;">
+  <h4>We here at Wellbe want to make sure you are getting the best information possible.</br></br>If you are willing to complete a few simple tasks for us, we will gladly perform the curation service for you <em style="font-size:20px;">free of charge!</em></h4>
+<h4>Here's how to get started:</h4></br>
+    <ul style="font-size:17px;">
+      <p><i class="icon-user">  Fill out your Wellbe profile</i> </p>
+      <p><i class="icon-pencil">  Share your CAM story (anonymously)</i>  </p>
+      <p><i class="icon-thumbs-up">  Rate the articles we curate for you</i>  </p>
+      <p><i class="icon-edit">  Fill out a quick survey about the website</i></p>
+      <p><i class="icon-share">  Refer a friend to Wellbe</i></p>
+    </br>
     </ul>
+<h4 style="text-align:right;">...do this, and your curated content will be free!</h4>
+  </div>
+  <p style="text-align:center;">If you'd like to go back (and why would you want to?) <%= link_to 'click here', :controller => "home", :action => "index" %>.</p>
 </div>
-		</div>
-
+<div class="span6">
+  <h3>Pick a curation method below:</h3>
+    <div class="row">
+      <div class="span3">
+        <div class="well">
+          <%= render "/charges/charge15" %>
+        </div>
+      </div>
+      <div class="span3">
+        <div class="well">
+          <%= render "/charges/charge9" %>
+        </div>
+      </div>
+  </div>
+    <div class="row">
+      <div class="span3">
+        <div class="well small-well">
+          <%= render "/charges/charge5" %>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <h4 style="text-align: center;"><em style="font-size:30px;"><strong>You will not be charged</em><br>until you have had adequate time to complete the post curation tasks!!!</h4>
+    </div>
 </div>
 
+</div> <!--bigger row div -->
 
-
-
-
-
-<p>Or just <%= link_to 'click here', :controller => "home", :action => "index" %> to go back (why would you want to?) </p>
+</div><!-- container div -->
