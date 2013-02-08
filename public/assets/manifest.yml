@@ -25,6 +25,8 @@ glyphicons-halflings-white.png: glyphicons-halflings-white-6cccd17a7aed91dbc0157
 glyphicons-halflings-white/index.png: glyphicons-halflings-white-6cccd17a7aed91dbc0157d343c68c0d9.png
 glyphicons-halflings.png: glyphicons-halflings-2851b489e8c39f8fad44fc10efb99c3e.png
 glyphicons-halflings/index.png: glyphicons-halflings-2851b489e8c39f8fad44fc10efb99c3e.png
+google_new.png: google_new-c7805b881a403b4b6f7072ca0469ecd4.png
+google_new/index.png: google_new-c7805b881a403b4b6f7072ca0469ecd4.png
 hospital.svg: hospital-afccfc3c16677a4f412c0e0992adb6a8.svg
 hospital/index.svg: hospital-afccfc3c16677a4f412c0e0992adb6a8.svg
 list-2.png: list-2-eb70389f7503f5e21bc3412959d19558.png
@@ -33,6 +35,18 @@ picture.png: picture-1915a7a762f500646d4b97231cb90eee.png
 picture/index.png: picture-1915a7a762f500646d4b97231cb90eee.png
 plus.png: plus-d4455bc0a402570c63a7552fcb03bae0.png
 plus/index.png: plus-d4455bc0a402570c63a7552fcb03bae0.png
+ppt_google.png: ppt_google-79f66ba841949d6e60c09e062f5d237d.png
+ppt_google/index.png: ppt_google-79f66ba841949d6e60c09e062f5d237d.png
+ppt_group.png: ppt_group-bcb7b9655b73dc5e7c91ec50896b4329.png
+ppt_group/index.png: ppt_group-bcb7b9655b73dc5e7c91ec50896b4329.png
+ppt_wellbe_compact.png: ppt_wellbe_compact-43e407dc5d8bd9123ef6a72899079deb.png
+ppt_wellbe_compact/index.png: ppt_wellbe_compact-43e407dc5d8bd9123ef6a72899079deb.png
+ppt_wellbe_large.png: ppt_wellbe_large-9eab2257bb973ef6cfc52de8a23120f7.png
+ppt_wellbe_large/index.png: ppt_wellbe_large-9eab2257bb973ef6cfc52de8a23120f7.png
+ppt_wellbe_new.png: ppt_wellbe_new-599a217a26bf5369ab28b833523d9307.png
+ppt_wellbe_new/index.png: ppt_wellbe_new-599a217a26bf5369ab28b833523d9307.png
+ppt_wellbe_small.png: ppt_wellbe_small-6f5bc85debc1edb06fabfd074d6dd079.png
+ppt_wellbe_small/index.png: ppt_wellbe_small-6f5bc85debc1edb06fabfd074d6dd079.png
 ricepaper2.png: ricepaper2-a51ad97d132bcee896e9f6b27365c2de.png
 ricepaper2/index.png: ricepaper2-a51ad97d132bcee896e9f6b27365c2de.png
 wellbe.png: wellbe-1915a7a762f500646d4b97231cb90eee.png
