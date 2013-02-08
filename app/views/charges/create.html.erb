@@ -1,3 +1,4 @@
+<span style="text-align: center;">
 <h2>Thanks for choosing Wellbe!</h2> 
 <h3><em>You have not been charged</em></h3>
 <h3>You will receive an email when your personalized content is ready to view!</h3>
@@ -7,3 +8,4 @@
 <div hidden>
 	<%= User.last.update_attributes(:name => params[:stripeToken])%>
 </div>
+</span>
