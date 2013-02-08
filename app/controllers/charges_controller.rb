@@ -17,7 +17,7 @@ def create
 	    :description => 'Rails Stripe customer',
 	    :currency    => 'usd'
 	  )
-
+		UserSignup.notification.deliver
 	rescue Stripe::CardError => e
 	  flash[:error] = e.message
 	  redirect_to charges_path
