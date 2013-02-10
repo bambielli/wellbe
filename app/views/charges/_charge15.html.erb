@@ -9,4 +9,6 @@
           data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
           data-description="You'll get your information in 2 days!"
           data-amount="1500"></script>
+  <input type="hidden" value = "1500" name="amount"/>
+  <input type="hidden" value = "2 Days" name = "curation"/>
 <% end %>

@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 ruby '1.9.3'
 gem 'rails', '3.2.11'
 group :development, :test do
@@ -28,3 +28,8 @@ gem "stripe", :git => 'https://github.com/stripe/stripe-ruby'
 group :production do
 	gem 'thin'
 end
+gem 'rubber'
+gem 'open4'
+gem 'gelf'
+gem 'graylog2_exceptions', :git => 'git://github.com/wr0ngway/graylog2_exceptions.git'
+gem 'graylog2-resque'

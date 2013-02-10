@@ -2,9 +2,11 @@
 
 <table>
   <tr>
-    <th>Name</th>
+    <!-- <th>Customer Id</th> -->
     <th>Email</th>
     <th>Condition</th>
+    <th>Sign-up Date </th>
+    <th>How Long For Curation</th>
     <th></th>
     <th></th>
     <th></th>
@@ -12,9 +14,11 @@
 
 <% @users.each do |user| %>
   <tr>
-    <td><%= user.name %></td>
+   <!-- <td><%= user.name %></td> -->
     <td><%= user.email %></td>
-    <td><%= user.condition %></td>
+    <td><strong><%= user.condition %></strong></td>
+    <td><%= user.created_at %></td>
+    <td><strong><%= user.curation %></strong></td>
     <td><%= link_to 'Show', user %></td>
     <td><%= link_to 'Edit', edit_user_path(user) %></td>
     <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -23,5 +27,3 @@
 </table>
 
 <br />
-
-<%= link_to 'New User', new_user_path %>
