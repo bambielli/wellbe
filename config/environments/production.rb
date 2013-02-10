@@ -64,7 +64,7 @@ Newapp::Application.configure do
   config.action_mailer.default_url_options = { :host => 'getwellbe.com' }
   # ActionMailer Config
   # Setup for production - deliveries, no errors raised
-  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.delivery_method = :ses ##CHANGED THIS FROM :smtp to :ses for the amazon :ses mailer
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = false
   config.action_mailer.default :charset => "utf-8"
