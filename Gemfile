@@ -23,7 +23,7 @@ gem "figaro", ">= 0.5.3"
 gem "better_errors", ">= 0.3.2", :group => :development
 gem "binding_of_caller", ">= 0.6.8", :group => :development
 gem "hub", ">= 1.10.2", :require => nil, :group => [:development]
-gem "heroku"
+gem "heroku-api"
 gem "stripe", :git => 'https://github.com/stripe/stripe-ruby'
 group :production do
 	gem 'thin'
