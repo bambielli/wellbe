@@ -1,14 +1,11 @@
-<%= form_tag charges_path do %>
-  <article>
-    <label class="amount">
-      <span><b>2 day curation service ($15.00)</b></span>
-    </label>
-  </article>
 
+<%= form_tag charges_path do %>
+<div style="margin: 30px 0px 30px 0px;">
   <script src="https://checkout.stripe.com/v2/checkout.js" class="stripe-button"
           data-key="pk_live_3qVrKvlqKA0DbFFwEtBCQrJG"
-          data-description="You'll get your information in 2 days!"
+          data-description="You'll get your info in 2 days!"
           data-amount="1500"></script>
   <input type="hidden" value = "1500" name="amount"/>
   <input type="hidden" value = "2 Days" name = "curation"/>
+  </div>
 <% end %>
