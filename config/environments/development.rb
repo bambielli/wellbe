@@ -15,7 +15,7 @@ Newapp::Application.configure do
 
   # ActionMailer Config
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
-  config.action_mailer.delivery_method = :smpt ##CHANGED THIS FROM :smtp to :ses for amazon
+  config.action_mailer.delivery_method = :smtp ##CHANGED THIS FROM :smtp to :ses for amazon
   # change to true to allow email to be sent during development
   config.action_mailer.perform_deliveries = true
   config.action_mailer.raise_delivery_errors = true
@@ -24,11 +24,11 @@ Newapp::Application.configure do
   config.action_mailer.smtp_settings = {
     address: "smtp.gmail.com",
     port: 587,
-    domain: "getwellbe.com",
     authentication: "plain",
     enable_starttls_auto: true,
-    user_name: 'getwellbe',
-    password: 'Wellbeemail@12'
+    user_name: ENV['GMAIL_USERNAME'],
+    password: ENV['GMAIL_PASSWORD'],
+    :openssl_verify_mode  => 'none'
 }
 
 

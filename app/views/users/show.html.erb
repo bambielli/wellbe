@@ -1,11 +1,11 @@
 
-<div class="span12"><h2 style="margin: 10px 0px 20px 0px;"><span style="font-size:40px;">Congrats!</span> Just one more thing before you go...</h3></div>
+<div class="span12"><h1 style="margin: 10px 0px 20px 0px;"><span style="font-size:40px;">Congrats!</span> Just one more thing before you go...</h1></div>
 
 <div class ="container">
 <div class="row">
 	<div class="span6">
     <div class="well" style="padding: 5px 19px 5px 19px;">
-  <h4 style="line-height:115%;">We here at Wellbe want to make sure you are getting the best information possible.</br></br>If you are willing to complete a few simple tasks for us, we will gladly perform the curation service for you <em style="font-size:40px;">free of charge!</em></h4>
+  <h4>We here at Wellbe want to make sure you are getting the best information possible.</br></br>If you are willing to complete a few simple tasks for us, we will gladly perform the curation service for you free of charge!</h4>
 <h4>Here's how to get started:</h4></br>
     <ul style="font-size:17px;">
       <p><i class="icon-user">  Fill out your Wellbe profile</i> </p>
@@ -19,35 +19,32 @@
   </div>
   <p style="text-align:center;">If you'd like to go back (and why would you want to?) <%= link_to 'click here', :controller => "home", :action => "index" %>.</p>
 </div>
-<div class="span6" style="margin: 5px;">
-  <h3 style="margin: 25px 0px 10px 33px; padding-left: 25px;">Pick a curation method below:</h3>
-    <div class="row">
-      <div class="span3"></br>
+<div class="span6" style="margin: 5px; padding: 85px 0px 0px 10px;">
+  <h1 style="margin: 25px 0px 10px 33px;">Pick a curation method below:</h1>
+  <div style="margin:0px 0px 0px 115px;">
+  <h5 style="width: 247px; text-align: center;"><em>You will not be charged</em><br>until you have had adequate time </br>to completethe post-curation tasks!</h5>
+</div>
+     <!-- <div class="span3"></br>
         <h4 style="padding-left: 80px;"> 2 day curation:</h4>
-      </div>
-      <div class="span3">
-          <%= render "/charges/charge15" %>
-      </div>
-    </div>
-    <div class="row">
+      </div> -->
+          <!-- render "/charges/charge15" -->
+          <%= render "/charges/chargeNoStripe" %>
+    <!--<div class="row">
       <div class="span3"></br>
         <h4 style="padding-left: 80px;"> 5 day curation: </h4>
       </div>
       <div class="span3">
-          <%= render "/charges/charge9" %>
+           render "/charges/charge9" 
       </div>
     </div>
     <div class="row">
       <div class="span3"></br>
-        <h4 style="padding-left: 65px; padding-bottom:40px;"> 10 day curation:</h4>
+        <h4 style="padding-left: 70px; padding-bottom:40px;"> 10 day curation:</h4>
       </div>
       <div class="span3">
-          <%= render "/charges/charge5" %>
+           render "/charges/charge5"
       </div>
-    </div>
-    <div class="row">
-      <h4 style="text-align: center;"><em style="font-size:45px;"><strong>You will not be charged</em><br>until you have had adequate time to complete</br>the post-curation tasks!!!</h4>
-    </div>
+    </div> -->
   </div>
 </div>
 

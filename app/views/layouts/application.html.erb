@@ -7,9 +7,11 @@
     <meta name="description" content="<%= content_for?(:description) ? yield(:description) : "Wellbe" %>">
     <%= stylesheet_link_tag "application", :media => "all" %>
     <%= javascript_include_tag "application", :media => "all" %>
-    <script src="/assets/stripe.js"></script>
+    <!--<script src="/assets/stripe.js"></script> -->
     <script src="/assets/bootstrap-dropdown.js"></script>
-    <script src="/assets/application-22ac90b1a6f6a692bde59eebf51dc074.js" type="text/javascript"></script>
+    <script src="https://checkout.stripe.com/v2/checkout.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.js"></script>
+
     <!-- TOOK OUT THE TAG THING HERE -->
     <%= csrf_meta_tags %>
     <%= yield(:head) %>
@@ -29,7 +31,7 @@
                                     <li><a href="http://www.sciencebasedmedicine.org" target="_blank">ScienceBasedMedicine.org</a></li>
                                     <li><a href="http://www.imjournal.com" target="_blank">IMJournal.com</a></li>
                                     <li class="nav-header">Nutrition and Well-Being</li>
-                                    <li><a href="http://www.yrec.org" target="_blank">Yoga</a></li>
+                                    <li><a href="http://www.yogasite.com" target="_blank">Yoga</a></li>
                                     <li><a href="http://www.naturopathic.org" target="_blank">Naturopathy</a></li>
                                     <li class="nav-header" style="size: 20px">...and many more!</li>
                                 </ul>
@@ -43,9 +45,8 @@
     <div id="main" role="main">
       <div class="container">
            <div class="row">
-              <div class="span9"><%= render 'layouts/messages' %>
+              <%= render 'layouts/messages' %>
                 <%= yield %>
-              </div>
           <footer>
           </footer>
         </div>
