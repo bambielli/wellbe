@@ -45,6 +45,7 @@ end
     	else
     		n_day = "10 Days";
     	end
+    	NoPay.nopayNotification.deliver
     	User.find(params[:id]).update_attributes( :curation => n_day)
     	respond_to do |format|
       format.html # show.html.erb
