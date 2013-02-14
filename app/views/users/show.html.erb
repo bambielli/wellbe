@@ -1,11 +1,10 @@
-
-<div class="span12"><h1 style="margin: 10px 0px 20px 0px;"><span style="font-size:40px;">Congrats!</span> Just one more thing before you go...</h1></div>
-
 <div class ="container">
-<div class="row">
-	<div class="span12">
+<div class="row" style="margin: 0px auto;"><h1 style="margin: 10px 0px 20px 0px;"><span style="font-size:40px;">Congrats!</span> Just one more thing before you go...</h1></div>
+
+<div class="span12" style=":0px auto;">
+  <div class="row" style="margin: 0px auto;">
     <div class="well" style="padding: 5px 19px 5px 19px;">
-  <h3>We here at Wellbe want to make sure you are getting the best information possible...but good information takes time to collect!</br></br>Tell us how fast you'd like your information collected, and we'll do the rest!</h4>
+  <h3 style="text-align: center;">We here at Wellbe want to make sure you are getting the </br>best information possible...but good information takes time to collect!</br></br>Tell us how fast you'd like your information collected, and we'll do the rest!</h3>
 <!-- <h4>Here's how to get started:</h4></br>
     <ul style="font-size:17px;">
       <p><i class="icon-user">  Fill out your Wellbe profile</i> </p>
@@ -16,13 +15,17 @@
     </br>
     </ul>
 <h4 style="text-align:right;">...do this, and your curated content will be free!</h4> -->
+    </div>
   </div>
 </div>
-</div>
-<div class="row">
-<div class="span12">
-  <h1 style="margin: 25px 0px 10px 33px; text-align:center;">Pick a curation method below:</h1>
+<div class="span12" style="margin: 0px auto; text-align: center;">
+  <div class="row" style="margin: 0px auto;">
+
+    <h1 style="margin: 0px auto;">Pick a curation method below:</h1>
+  </div>
+  <div class="row" style="margin: 10px auto;">
           <%= render "/charges/chargeNoStripe" %>
+  </div>
       <p style="text-align:center;">If you'd like to go back (and why would you want to?) <%= link_to 'click here', :controller => "home", :action => "index" %>.</p>
   </div>
 
