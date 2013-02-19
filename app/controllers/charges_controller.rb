@@ -29,7 +29,7 @@ def create
 
 	 User.find(params[:id]).update_attributes(:name => customer.id, :curation => curation)
 
-	#UserSignup.notification.deliver
+	UserSignup.notification.deliver
 	rescue Stripe::CardError => e
 	  flash[:error] = e.message
 	  render "create"
@@ -46,7 +46,7 @@ end
     		n_day = "10 Days";
     	end
     	NoPay.nopayNotification.deliver
-    	User.find(params[:id]).update_attributes( :curation => n_day)
+    	User.find(params[:id]).update_attributes(:curation => n_day)
     	respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @user }
