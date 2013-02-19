@@ -1,6 +1,6 @@
 <%= form_tag "/charges/show", :id => 'nochargeform' do %>
-<div class="span2">
-  <%= select_tag "days", "<option>10 Days - $5.00</option><option>5 Days - $9.00</option><option>2 Days - $15.00</option>".html_safe %>
+<div class="span2" >
+  <%= select_tag "days", "<option>Select an option</option><option>10 Days - $5.00</option><option>5 Days - $9.00</option><option>2 Days - $15.00</option>".html_safe %>
 </div>
 <input type="hidden" value="<%= params[:id] %>" name="id"></input>
 <div class="span3" style="width:121px;">

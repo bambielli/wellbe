@@ -52,6 +52,7 @@ GEM
       mail (> 2.2.5)
       mime-types
       xml-simple
+    bcrypt-ruby (3.0.1)
     better_errors (0.3.2)
       coderay (>= 1.0.0)
       erubis (>= 2.7.0)
@@ -228,6 +229,7 @@ PLATFORMS
 DEPENDENCIES
   asset_sync (~> 0.5.4)
   aws-ses
+  bcrypt-ruby
   better_errors (>= 0.3.2)
   binding_of_caller (>= 0.6.8)
   coffee-rails (~> 3.2.1)
