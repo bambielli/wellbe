@@ -1,6 +1,7 @@
 class UsersController < ApplicationController
   # GET /users
   # GET /users.json
+      http_basic_authenticate_with :name => "admin", :password => "Wellbeadmin@12", :only => :index
   def index
     @users = User.all
 
@@ -9,6 +10,14 @@ class UsersController < ApplicationController
       format.json { render json: @users }
     end
   end
+
+def passcreate
+  @user = User.find(params[:email])
+      respond_to do |format|
+      format.html # pascreate.html.erb
+      format.json { render json: @users }
+  end
+end
 
   # GET /users/1
   # GET /users/1.json

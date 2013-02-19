@@ -1,4 +1,3 @@
-
 class UserMailer < ActionMailer::Base
   default from: "getwellbe@gmail.com"
     def welcome_email(protocol, host, user)
